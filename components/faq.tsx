@@ -8,9 +8,9 @@ import Image from "next/image";
 import { faqs } from "@/constants";
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleDropdown = (index: any) => {
+  const toggleDropdown = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -19,14 +19,14 @@ const FAQ = () => {
       <Container>
         <div className="w-full flex flex-col items-center justify-center mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl md:!leading-snug font-semibold text-center lg:text-left bg-clip-text text-green900 max-w-xl relative">
-            We're Here to{" "}
+            We&apos;re Here to{" "}
             <span className="relative">
               Help
               <NeonUnderline />
             </span>{" "}
           </h1>
           <p className="text-base md:text-lg text-center lg:text-left mt-2 text-green900">
-            Need help? We’ve got you covered with answers.
+            Need help? We&apos;ve got you covered with answers.
           </p>
         </div>
         <div className="relative flex flex-col lg:flex-row items-center justify-between w-11/12 md:w-full space-y-10 lg:space-y-0">
