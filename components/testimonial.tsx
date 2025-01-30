@@ -14,7 +14,7 @@ const Testimonial = () => {
           </div>
           <div className="h-full flex flex-col flex-grow max-w-screen-md items-center justify-center bg-green900 rounded-[18px] px-10">
             <span className="text-2xl font-semibold italic text-white text-left">
-              "{testimonial.body}"
+              &quot;{testimonial.body}&quot;
             </span>
 
             <div className="w-full flex items-center justify-start mt-[10%] space-x-3">
